@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            font-family: system-ui, -apple-system, 'Segoe UI';
+            font-size: 1.5em;
+            padding: 30px;
+            border-radius: 90px 5px 90px 0px;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            background: -webkit-linear-gradient(to right, #ffafbd, #ffc3a0);
+            margin: 10px auto;
+            width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #E55D87;
+        }
+
+        .blank {
+            font-weight: 500;
+            color: #9796f0;
+        }
+
+        form button {
+            background: linear-gradient(to right, #ee9ca7, #ffdde1);
+            color: #ED4264;
+            text-align: center;
+            padding: 4px;
+        }
+
+        form button {
+            border: 1.5px solid blanchedalmond;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var formData = location.search;
+
+        formData = formData.substring(1, formData.length);
+        while (formData.indexOf("+") != -1) {
+            formData = formData.replace("+", " ");
+        }
+
+        formData = unescape(formData);
+        var formArray = formData.split("&");
+
+        var para = new Array();
+        var name, AdminNo, contactNo, GrpSelect, joinPublicity, capability; 
+    </script>
+
+    <div>
+        <h1>Signing Up Form Details</h1>
+        <p>Your Name is <span id="name" class="blank"></span> <br>
+            Admin Number is <span id="AdminNo" class="blank"></span> <br>
+            Your contact number is <span id="contactNo" class="blank"></span> <br>
+            You have choosen to join <span id="GrpSelect" class="blank"></span> Group <br>
+            You decision to join Publicity Sub-Group is <span id="joinPublicity" class="blank"></span> <br>
+            If yes, your capability to use adobe software is <span id="capability" class="blank"></span></p>
+        <div>
+
+            <script>
+                for (var i = 0; i < formArray.length; ++i) {
+                    para = formArray[i].split("=");
+
+                    switch (para[0]) {
+                        case "name":
+                            document.getElementById("name").innerHTML = para[1];
+                            name = para[1];
+                            break;
+                        case "AdminNo":
+                            document.getElementById("AdminNo").innerHTML = para[1];
+                            AdminNo = para[1];
+                            break;
+                        case "contactNo":
+                            document.getElementById("contactNo").innerHTML = para[1];
+                            contactNo = para[1];
+                            break;
+                        case "GrpSelect":
+                            document.getElementById("GrpSelect").innerHTML = para[1];
+                            GrpSelect = para[1];
+                            break;
+                        case "joinPublicity":
+                            document.getElementById("joinPublicity").innerHTML = para[1];
+                            joinPublicity = para[1];
+                            break;
+                        case "capability":
+                            document.getElementById("capability").innerHTML = para[1];
+                            capability = para[1];
+                            break;
+                    }
+                } 
+            </script>
+
+            <form action="Form.html">
+                <button class="GoingBack">Going Back</button>
+            </form>
+</body>
+
+</html>

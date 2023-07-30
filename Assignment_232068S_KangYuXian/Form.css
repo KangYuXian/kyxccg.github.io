@@ -1,0 +1,114 @@
+html {
+  background-image: -webkit-linear-gradient(to right, #ffeeee, #ddefbb);
+  background-image: linear-gradient(to right, #ffeeee, #ddefbb);
+}
+
+nav {
+  max-width: 900px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+nav ul li a.current {
+    background-color: lightcyan;
+}
+
+h1 {
+  text-align: center;
+  color: chocolate;
+  font-weight: bolder;
+  position: relative;
+}
+
+#Formming {
+  display:flex;
+  justify-content: center;
+  width:fit-content;
+  margin: 0 auto;
+}
+
+#name {
+  border:0; 
+  border-bottom:1px solid #eee;
+  box-shadow:0 0 15px 4px #99d5d5;
+  display:flex;
+  justify-content: center;
+  width:400px;
+  margin: 0 auto;
+}
+
+#AdminNo {
+  border:0; 
+  border-bottom:1px solid #eee;
+  box-shadow:0 0 15px 4px #89cff0;
+  display: flex;
+  justify-content: center;
+  width:400px;
+  margin: 0 auto;
+}
+
+#contactNo {
+  border:0; 
+  border-bottom:1px solid #eee;
+  box-shadow:0 0 15px 4px #ccccff;
+  display: flex;
+  justify-content: center;
+  width:400px;
+  margin: 0 auto;
+}
+
+::placeholder {
+  text-align: center; 
+}
+
+label#GrpSelect {
+  border:0; 
+  border-bottom:1px solid #eee;
+  box-shadow:0 0 15px 4px #96ded1;
+}
+
+label#joinPublicity {
+  border:0; 
+  border-bottom:1px solid #eee;
+  box-shadow:0 0 15px 4px #8080ff;
+  width: fit-content;
+}
+
+label#capability {
+  border:0; 
+  border-bottom:1px solid #eee;
+  box-shadow:0 0 15px 4px #8080ff;
+}
+
+#Six {
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  text-align: end;
+}

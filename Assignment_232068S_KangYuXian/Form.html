@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signing Up For CCA</title>
+
+    <link rel="stylesheet" href="Form.css">
+    <script src="FormValidation.js"></script>
+</head>
+
+<body>
+    <h1>CHINESE CULTURAL GROUP (CCG)</h1>
+    <nav>
+        <ul>
+            <li><a href="CCG.html">About</a></li>
+            <li><a href="WeeklySessions.html">Weekly Sessions</a></li>
+            <li><a href="Events.html">Events</a></li>
+            <li><a href="#" class="current">Form</a></li>
+        </ul>
+    </nav>
+
+    <div id="Formming">
+        <form action="FormProcessor.html" method="get" id="Form" name='MyForm' onsubmit="return Validations()">
+            <input type="text" name="name" id="name" placeholder="Name"> <br>
+
+            <br>
+
+            <input type="text" id="AdminNo" name="AdminNo" placeholder="AdminNo"> <br>
+
+            <br>
+
+            <input type="text" name="contactNo" id="contactNo" placeholder="ContactNo"> <br>
+
+            <br>
+
+            <label name="GrpSelect" id="GrpSelect">Sub-Group Selection:</label> <br>
+            <input type="checkbox" name="GrpSelect" id="GrpSelect" value="Vocal">Vocal<br>
+            <input type="radio" name="GrpSelect" id="GrpSelect" value="Dance">Dance<br>
+            <input type="radio" name="GrpSelect" id="GrpSelect" value="Calligraphy">Calligraphy<br>
+            <input type="checkbox" name="GrpSelect" id="GrpSelect" value="Drama">Drama<br>
+
+            <br>
+
+            <label name="joinPublicity" id="joinPublicity">Would You Also like to Join (Publicity) Group?</label> <br>
+            <input type="radio" name="joinPublicity" id="joinPublicity" value="Yes"> Yes <br>
+            <input type="radio" name="joinPublicity" id="joinPublicity" value="No"> No <br>
+
+            <br>
+
+            <label id="capability" name="capability">If Yes, On Scale of 10, How Well Are You Capable of Using Adobe Software (Eg. PS, AL, PR, etc...) </label> <br>
+            <input type="radio" name="capability" value="1-3">1-3 Not Capable<br>
+            <input type="radio" name="capability" value="4-5">4-5 Partially Capable<br>
+            <input type="radio" name="capability" value="6-8">6-8 Capable<br>
+            <input type="radio" name="capability" value="9-10">9-10 Very Capable<br>
+
+            <br>
+
+            <button type="reset" name="Reset Form"> Reset </button>
+            <button type="Submit" value="Submit"> Send </button>
+        </form>
+    </div>
+</body>
+
+<div id="Six">
+    <p><a href="#top">Go Top</a> | <a href="mailto:nypccg2016@gmail.com">Email</a></p>
+</div>
+
+</html>

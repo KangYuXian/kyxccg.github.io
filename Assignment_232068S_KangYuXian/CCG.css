@@ -1,0 +1,114 @@
+html {
+    background-image: -webkit-linear-gradient(to right, #ddd6f3, #faaca8);
+    background-image: linear-gradient(to right, #ddd6f3, #faaca8);
+}
+
+nav {
+    max-width: 900px;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%,
+            rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+}
+
+nav ul li a.current {
+    background-color: lightcyan;
+}
+
+h1 {
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+}
+
+h3 {
+    font-weight: bolder;
+    color: darkred;
+    text-align: left;
+    border: 5px solid #e2dfd2;
+    display: inline-flex;
+}
+
+.RRR {
+    margin: 10px auto 20px;
+    display: block;
+}
+
+#Two {
+    font-weight: bold;
+    text-align: center;
+}
+
+ol {
+    font-weight: bold;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#Five {
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 5px 5px 7px #b87333;
+}
+
+span {
+    text-align: center;
+}
+
+#Seven {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-align: end;
+}
+
+.fa {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    margin-left: 10cm;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-youtube {
+    background: #ff0000;
+    color: white;
+}
